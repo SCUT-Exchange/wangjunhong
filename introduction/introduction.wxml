@@ -1,0 +1,44 @@
+<view class="container container-fill">
+	<view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
+		<view class="section section01 {{scrollindex==0?'active':''}}" >
+			<text class="section-maintitle">请向下滑动查看全部功能!</text>
+			
+		</view>
+		<view class="section1 section02 {{scrollindex==1?'active':''}}">
+			<text class="section-maintitle">首页功能介绍</text>
+			<text class="section-subtitle">\n·搜索框\n</text>
+            <text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;搜索框输入您想要的商品点击搜索按钮就可以得到结果\n</text>
+            <text class="section-subtitle">·轮播图\n</text>
+            <text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;轮播图是我们小组用来宣传华工和放置广告位的地方，点击图片则会分别跳转到华工官网首页和广告网页\n</text>
+            <text class="section-subtitle">·九宫格\n</text>
+            <text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;九宫格处放置了四个功能：二手商城，新品推荐，使用帮助，上门回收。点击二手商城则来到购物界面挑选商品；点击新品推荐，则会获得刚刚发布的商品的信息；点击使用帮助则可选择来到本界面或打电话询问客服；点击上门回收，我们则会向您推荐一些二手商品收购商，您可以选择和他们谈妥价格后出售您的二手商品！\n</text>
+            <text class="section-subtitle">·热门推荐\n</text>
+            <text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;我们会将点击量高的商品放在首页</text>
+		</view>
+		<view class="section2 section03 {{scrollindex==2?'active':''}}" >
+			<text class="section-maintitle">发布页面介绍\n</text>
+			<text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;依次输入商品名，价格，数量，类型，描述，添加商品图片后即可上传发布！</text>
+		</view>
+		<view class="section3 section04 {{scrollindex==3?'active':''}}" >
+			<text class="section-maintitle">我的页面介绍</text>
+            <text class="section-subtitle">\n·未授权登陆\n</text>
+			<text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;未授权登陆时，只有两个功能：反馈建议和在线客服。点击反馈建议即可跳转到相关网页向管理员反馈建议；点击在线客服即可拨打相关人员电话</text>
+            <text class="section-subtitle">·已授权登陆\n</text>
+            <text class="section-subtitle" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;已授权登陆后，即能在原来两个功能的基础上新增我的订单；我的评论；我发布的。点击我的订单可查看您买下的东西；点击我的评论可查看您发表的评论；点击我发布的，可以查看您发布的商品</text>
+		</view>
+		<view class="section4 section05 {{scrollindex==4?'active':''}}" >
+			<text class="section-maintitle">之后再想想还什么要加的</text>
+			<text class="section-subtitle">wjh的页面5</text>
+		</view>
+        <view class="section4 section05 {{scrollindex==5?'active':''}}"  >
+			<text class="section-maintitle">之后再想想还什么要加的</text>
+			<text class="section-subtitle">wjh的页面6</text>
+        </view>
+        <view class="section section05 {{scrollindex==6?'active':''}}"  >
+			<text class="section-maintitle">之后再想想还什么要加的</text>
+			<text class="section-subtitle">wjh的页面7</text>
+        </view>
+        
+	</view>
+</view>
+

@@ -1,0 +1,25 @@
+<!-- 顶部轮播图 -->
+<view>
+	<swiper indicator-dots="{{true}}" indicator-color="#f4c903" autoplay="true" circular="true">
+		<block wx:for="{{banner}}" wx:key="banner">
+			<swiper-item bindtap="goToSCUT">
+				<image src='{{item.picUrl}}' mode="widthFix" style="width:100%;height:100%;" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+<!-- 九宫格 -->
+<view class="category_panel1">
+	<!-- 第一排 -->
+    <view class="category-panel2">
+		<view bindtap='goToIntroduction' class="category-item">
+			<image class="category-item-image" src="/image/功能介绍.png" />
+			<text class="category-item-text">功能介绍</text>
+		</view>
+		<view bindtap='goToPhone' class="category-item">
+			<image class="category-item-image" src="/image/客服电话.png" />
+			<text class="category-item-text">客服电话</text>
+		</view>
+    </view>
+</view>
